@@ -12,11 +12,15 @@
 +-------------------+----------------------------------------------------------+
 | **Website**       | http://www.nkavvadias.com                                |
 +-------------------+----------------------------------------------------------+
-| **Release Date**  | 25 September 2014                                        |
+| **Release Date**  | 03 October 2014                                          |
 +-------------------+----------------------------------------------------------+
-| **Version**       | 1.1.1                                                    |
+| **Version**       | 1.1.2                                                    |
 +-------------------+----------------------------------------------------------+
 | **Rev. history**  |                                                          |
++-------------------+----------------------------------------------------------+
+|        **v1.1.2** | 2014-10-03                                               |
+|                   |                                                          |
+|                   | Minor README.rst correction.                             |
 +-------------------+----------------------------------------------------------+
 |        **v1.1.1** | 2014-09-25                                               |
 |                   |                                                          |
@@ -65,8 +69,9 @@ end:
 exit: 
   a boolean flag to report if an exit from the loop is possible from that node.
 
-This pass works for the SUIFvm instruction set as well as other MachSUIF 
-backends. The ``loopstr`` pass has been tested with MachSUIF 2.02.07.15.
+This pass depends on the machine, cfg and cfa libraries of MachSUIF. This pass 
+works for the SUIFvm instruction set as well as other MachSUIF backends. The 
+``loopstr`` pass has been tested with MachSUIF 2.02.07.15.
 
 
 2. File listing
@@ -126,4 +131,5 @@ The pass accepts an input file in CFG form to operate. Textual output is
 generated, written to stdout by default.
 
 Usage synopsys:
+
 | ``$ do_loopstr test.cfg``

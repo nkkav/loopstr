@@ -361,13 +361,18 @@ ul.auto-toc {
 <td><a class="reference external" href="http://www.nkavvadias.com">http://www.nkavvadias.com</a></td>
 </tr>
 <tr><td><strong>Release Date</strong></td>
-<td>25 September 2014</td>
+<td>03 October 2014</td>
 </tr>
 <tr><td><strong>Version</strong></td>
-<td>1.1.1</td>
+<td>1.1.2</td>
 </tr>
 <tr><td><strong>Rev. history</strong></td>
 <td>&nbsp;</td>
+</tr>
+<tr><td><strong>v1.1.2</strong></td>
+<td><p class="first">2014-10-03</p>
+<p class="last">Minor README.rst correction.</p>
+</td>
 </tr>
 <tr><td><strong>v1.1.1</strong></td>
 <td><p class="first">2014-09-25</p>
@@ -415,8 +420,9 @@ Loop info:
 <dt>exit:</dt>
 <dd>a boolean flag to report if an exit from the loop is possible from that node.</dd>
 </dl>
-<p>This pass works for the SUIFvm instruction set as well as other MachSUIF
-backends. The <tt class="docutils literal">loopstr</tt> pass has been tested with MachSUIF 2.02.07.15.</p>
+<p>This pass depends on the machine, cfg and cfa libraries of MachSUIF. This pass
+works for the SUIFvm instruction set as well as other MachSUIF backends. The
+<tt class="docutils literal">loopstr</tt> pass has been tested with MachSUIF 2.02.07.15.</p>
 </div>
 <div class="section" id="file-listing">
 <h1>2. File listing</h1>
@@ -486,8 +492,10 @@ the SUIF 2 top-level directory.</p>
 <h1>4. Usage details</h1>
 <p>The pass accepts an input file in CFG form to operate. Textual output is
 generated, written to stdout by default.</p>
-<p>Usage synopsys:
-| <tt class="docutils literal">$ do_loopstr test.cfg</tt></p>
+<p>Usage synopsys:</p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal">$ do_loopstr test.cfg</tt></div>
+</div>
 </div>
 </div>
 </body>
